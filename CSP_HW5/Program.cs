@@ -24,10 +24,7 @@ namespace CSP_HW5
     {
         public int _id = 0; //количество сотрудников 
 
-        public Journal()
-        {
-
-        }
+        public Journal(){ _id = 0; }
         public Journal(int id)
         {
             this._id = id;
@@ -85,10 +82,19 @@ namespace CSP_HW5
             Journal j2 = new Journal(3);
 
             Console.WriteLine($"журнал J1 -{j1.ToString()}\tжурнал J2 -{j2.ToString()}\n");
-            j1 += 2;
-            Console.WriteLine("j1 += 2\n");
-            Console.WriteLine($"журнал J1 -{j1.ToString()}\tжурнал J2 -{j2.ToString()}\n");
+            Console.WriteLine($"j1 != j2 {j1 != j2}\tj1 > j2 {j1 > j2}\t j1 = j2 {j1 == j2}\t j1 < j2 {j1 < j2}\n");
+            
+            j1 +=2;
+            Console.WriteLine("j1 + 2\n");
 
+            Console.WriteLine($"журнал J1 -{j1.ToString()}\tжурнал J2 -{j2.ToString()}\n");
+            Console.WriteLine($"j1 != j2 {j1 != j2}\tj1 > j2 {j1 > j2}\t j1 = j2 {j1 == j2}\t j1 < j2 {j1 < j2}\n");
+
+            j1 -= 1;
+            Console.WriteLine("j1 - 1\n");
+
+            Console.WriteLine($"журнал J1 -{j1.ToString()}\tжурнал J2 -{j2.ToString()}\n");
+            Console.WriteLine($"j1 != j2 {j1 != j2}\tj1 > j2 {j1 > j2}\t j1 = j2 {j1 == j2}\t j1 < j2 {j1 < j2}\n");
         }
     }
 }
