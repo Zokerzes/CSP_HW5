@@ -6,7 +6,7 @@ using System.Runtime.CompilerServices;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
-using static CSP_HW5.Journal;
+
 
 namespace CSP_HW5
 {
@@ -68,7 +68,7 @@ namespace CSP_HW5
         }
         public override string ToString()
         {
-            return $"колличество сотрудников: {this._id}";
+            return $" колличество сотрудников: {this._id}";
         }
     }
 
